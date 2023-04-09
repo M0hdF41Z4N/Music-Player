@@ -1,0 +1,407 @@
+/* Custom styling */
+
+body {
+  background-color: #00072d !important;
+}
+
+#top-navbar,
+#TableOfContents {
+  box-shadow: 2px 15px 21px 2px #00072d;
+}
+
+.container-fluid {
+  background-color: #00072d;
+  /* background-color: red !important; */
+}
+
+.bg-custom {
+  background-color: #00072d;
+}
+
+small {
+  color: lightgrey;
+}
+
+.bottom-navbar-bg-custom {
+  background-color: #2c2b2d !important;
+}
+
+/* Website Logo styling */
+
+#website-logo {
+  width: 20vw;
+  /* For reference purpose */
+  /* border: 1px solid yellow; */
+  margin: 0px;
+  padding: 0px;
+}
+
+#website-logo img {
+  height: 50px;
+  width: auto;
+  max-width: 150px;
+  margin: 0;
+  padding: 0;
+  /* For reference purpose */
+  /* border: 1px solid red; */
+}
+
+/* Search Bar */
+.search-bar {
+  border-radius: 2rem;
+  background-color: #0b2447;
+}
+
+.search-bar .bi-search {
+  color: white;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.search-bar .bi-mic {
+  color: #415c82;
+}
+
+.search-bar input {
+  border-width: 0px;
+  color: white;
+}
+
+/* Carousel styling */
+
+#carousel img {
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+#carousel img:hover {
+  transform: scale(1.15);
+}
+
+/* Latest Release section styling */
+
+/* Latest Release song image */
+
+#l_r_songs_img {
+  width: 70px;
+  height: 70px;
+  background-image: url("./static/lat_rel_1.jpg");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#l_r_songs_img i {
+  font-size: 2rem;
+  color: transparent;
+}
+
+#l_r_songs_img i:hover {
+  color: white;
+}
+
+/* Artist Section styling */
+
+.artist {
+  position: relative;
+  /* For reference purpose */
+  /* border: 1px solid turquoise; */
+}
+
+.artist .artist-btn {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 3rem;
+  color: transparent;
+}
+
+.artist .artist-btn:hover {
+  color: white;
+}
+
+/* Stations styling */
+
+.box-1 {
+  background-color: rgba(255, 193, 0, 0.79);
+  width: 150px;
+  height: 60px;
+}
+
+.box-2 {
+  background-color: rgba(245, 169, 39, 1);
+  width: 128px;
+  height: 75px;
+  position: relative;
+  top: -6px;
+  left: 12px;
+}
+.box-3 {
+  background-color: orangered;
+  width: 102px;
+  height: 86px;
+  position: relative;
+  left: 12px;
+  top: -6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-3 img {
+  width: 60px;
+  height: 60px;
+}
+
+.theme {
+  position: relative;
+  /* For reference purpose */
+  /* border: 1px solid turquoise; */
+  margin-bottom: 2%;
+}
+
+.theme img {
+  opacity: 0.7;
+  width: 70px;
+  height: 70px;
+}
+
+.theme .theme-name {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.8rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#workout {
+  left: 18% !important;
+}
+
+/* Recommendation Section */
+
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.theme-grid {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  /* For reference purpose */
+  /* border: 1px solid greenyellow; */
+}
+
+.theme-box {
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-box:hover {
+  transform: scale(1.15);
+}
+
+/* Queue Styling */
+
+.list-grp-item {
+  padding: 2%;
+}
+
+/* Customizing Queue :   Table of Content */
+
+.bd-toc-collapse nav {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.queue-btn {
+  color: turquoise !important;
+  border: 0px;
+}
+
+ol .list-grp-item img {
+  width: 35px;
+  height: 35px;
+}
+
+.bd-toc {
+  overflow-y: scroll !important;
+}
+
+.bd-toc::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bd-toc {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Bottom Music Controls */
+
+#music-logo {
+  /* For reference purpose */
+  /* border: 1px solid yellow; */
+  margin: 0px;
+  padding: 0px;
+}
+
+#music-logo img {
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0;
+  /* For reference purpose */
+  /* border: 1px solid red; */
+}
+
+.music-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  /* For reference purpose */
+  /* border: 1px solid white; */
+  max-width: 100vw;
+  min-width: auto;
+}
+
+.player-button {
+  text-align: center;
+}
+
+.player-status {
+  display: flex;
+  /* For reference purpose */
+  /* border: 1px solid green; */
+}
+
+.player-status label {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.player-status input[type="range"] {
+  /* For reference purpose */
+  /* border: 1px solid white; */
+  width: 100%;
+}
+
+.player-button i {
+  font-size: 1.2rem;
+  padding-right: 0.8rem !important;
+  padding-left: 0.8rem !important;
+  /* For reference purpose */
+  /* border: 1px solid rgb(0, 255, 21); */
+}
+
+.player-button .bi-pause-circle,
+.player-button .bi-play-circle {
+  font-size: 2rem !important;
+
+  /*  */
+}
+
+#music-controls {
+  text-align: right;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #053a5f;
+  height: 0.3rem;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #053a5f;
+  height: 0.3rem;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  /* Centers thumb on the track */
+  margin-top: -5px;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+/* Single Playlist Screen */
+
+/* Jumbo Card */
+
+.artist-info {
+  color: lightgrey;
+  background-color: #0b2447;
+}
+
+.btn-playAll {
+  background: linear-gradient(90deg, blueviolet, #a459d1, #ffa3fd);
+  border-radius: 0px !important;
+  color: white !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.btn-follow {
+  color: white !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  border-radius: 0px !important;
+}
+
+.jumbo-card-img img {
+  box-shadow: inset 3rem white;
+  /* For reference purpose */
+  /* border: 1px solid darkblue; */
+}
+
+.artist-info p {
+  font-size: 12px;
+}
+
+/* Artist Playlist styling */
+
+#artist-playlist ol .list-grp-item img {
+  width: 70px;
+  height: 70px;
+}
+
+#artist-playlist .list-grp-item {
+  padding: 0%;
+  margin: 0% 0% 2% 0%;
+  /* For reference purpose */
+  /* border: 1px solid blueviolet; */
+}
+
+#artist-playlist li {
+  background-color: #343e4ca5 !important;
+}
+
+#artist-playlist ol .list-grp-item i {
+  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+}

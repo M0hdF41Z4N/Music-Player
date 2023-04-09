@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <!-- title of the page -->
+    <title>Ninja Studio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS link -->
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    
+    <!-- Note : Most of components are built on container concept 
+      with rows and column using bootstrap -->
+
+      <!-- Header of the Page -->
+    <header class="mb-2">
+      <!-- Top navigation bar -->
+      <nav class="navbar navbar-dark fixed-top navbar-expand-md bg-custom p-0 m-0">
+        <!-- Container for Navigation -->
+        <div class="container-fluid py-2" id="top-navbar">
+          <!-- Logo -->
+          <a id="website-logo" class="navbar-brand" href="/">
+            <img src="./assets/static/logo.png" alt="Logo"
+          /></a>
+          <!-- Navigation Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Responsive Collapsable content -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- List-items of Navigation bar -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Favourites</a
+                >
+              </li>
+            </ul>
+            <div class="search-bar p-1">
+              <form class="" role="search">
+                <i class="bi bi-search"></i>
+                <input
+                  class="bg-transparent"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="bi bi-mic p-1 m-1"></i>
+              </form>
+            </div>
+            
+            <div class="d-flex align-items-center">
+              <!-- Notification link -->
+              <button type="button" class="btn text-light">
+                <i class="bi bi-bell-fill position-relative">
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </i>
+              </button>
+              <!-- Profile link -->
+              <button type="button" class="btn">
+                <img
+                  src="https://github.com/mdo.png"
+                  alt="mdo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle"
+                />
+              </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Container for Page Content-->
+    <div class="container-fluid">
+      <div class="row bg-transparent mt-5">
+        <!-- Responsive column for main -->
+        <div class="col-md-8">
+          <div class="container-fluid d-flex text-light mt-5">
+            <!-- Main -->
+            <main class="">
+              
+                   <div class="container-fluid bg-transparent">
+                <!-- carousel -->
+                <div id="carousel">
+                  <div class="row mt-2">
+                    <!-- Carousel => 1 -->
+                    <div class="col-sm-8 col-md-4">
+                      <a href="">
+                        <img
+                          src="./assets/static/carousel1.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- Carousel => 2 -->
+                    <div class="col-sm-8 col-md-4">
+                      <a href="">
+                        <img
+                          src="./assets/static/carousel2.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <!-- Carousel => 3 -->
+                    <div class="col-sm-8 col-md-4">
+                      <a href="">
+                        <img
+                          src="./assets/static/carousel3.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Latest release Section -->
+                <section id="latest_release_section">
+                <div class="row mt-2">
+                  <!-- Heading for Latest Release Songs -->
+                  <h5>Latest Release</h5>
+                  <div class="col text-white">
+                    <!-- List of Latest Release songs -->
+                    <ul class="list-group text-white">
+                      <!-- List item -->
+                      <li
+                        class="list-grp-item  text-white d-flex justify-content-between align-items-start bg-transparent px-0"
+                      >
+                      <!-- music logo -->
+                      <div id="l_r_songs_img">
+                        <a href="#latest_release_section" class="btn border border-0">
+                          <audio id="latestTestAudio" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+                          </audio>
+                          <i id="latPlayAudio" class="bi bi-play-fill"></i>
+                        </a>
+                      </div>
+                      <!-- music details -->
+                        <div
+                          class="ms-2 me-auto align-self-center justify-self-center"
+                        >
+                          <div class="fw-bold">Onism</div>
+                          <small class="fw-lighter" style="font-size: 12px;"
+                            >Aug 11, 2017</small
+                          >
+                        </div>
+                        <!-- options button -->
+                        <div class="">
+                          <a
+                            class=""
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-three-dots text-light"></i>
+                          </a>
+                          <!-- Dropdown -->
+                          <ul class="dropdown-menu text-dark">
+                            <li>
+                              <!-- Play now Button -->
+                              <a class="dropdown-item" href="#"
+                                ><i class="bi bi-play-fill text-dark"></i> Play
+                                Now
+                              </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Add to queue button -->
+                              <a class="dropdown-item " href="#"
+                                ><i class="bi bi-plus text-dark"></i> Add To
+                                Queue</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Add to Favourite -->
+                              <a class="dropdown-item " href="#"
+                                ><i class="bi bi-list-task text-dark"></i> Add
+                                To Favourites</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Get Info Button -->
+                              <a class="dropdown-item " href="#"
+                                ><i
+                                  class="bi bi-info-circle-fill text-dark"
+                                ></i>
+                                Get Info</a
+                              >
+                            </li>
+                          </ul>
+                          <!-- Music Rating -->
+                          <div class="fw-lighter">
+                            
+                            <small style="font-size: 12px;">4.44</small>
+                          </div>
+                          
+                        </div>
+                      </li>
+                      
+                      <!-- List item -->
+                      <li
+                        class="list-grp-item  text-white d-flex justify-content-between align-items-start bg-transparent px-0"
+                      >
+                      <!-- music logo -->
+                      <div id="l_r_songs_img">
+                        <a href="#latest_release_section" class="btn border border-0">
+                          <audio id="latestTestAudio1" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+                          </audio>
+                          <i id="latPlayAudio1" class="bi bi-play-fill"></i>
+                        </a>
+                      </div>
+                      <!-- music details -->
+                        <div
+                          class="ms-2 me-auto align-self-center justify-self-center"
+                        >
+                          <div class="fw-bold">Onism</div>
+                          <small class="fw-lighter" style="font-size: 12px;"
+                            >Aug 11, 2017</small
+                          >
+                        </div>
+                        <!-- options button -->
+                        <div class="">
+                          <a
+                            class=""
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="bi bi-three-dots text-light"></i>
+                          </a>
+                          <!-- Dropdown -->
+                          <ul class="dropdown-menu text-dark">
+                            <li>
+                              <!-- Play now Button -->
+                              <a class="dropdown-item" href="#"
+                                ><i class="bi bi-play-fill text-dark"></i> Play
+                                Now
+                              </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Add to queue button -->
+                              <a class="dropdown-item " href="#"
+                                ><i class="bi bi-plus text-dark"></i> Add To
+                                Queue</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Add to Favourite -->
+                              <a class="dropdown-item " href="#"
+                                ><i class="bi bi-list-task text-dark"></i> Add
+                                To Favourites</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <!-- Get Info Button -->
+                              <a class="dropdown-item " href="#"
+                                ><i
+                                  class="bi bi-info-circle-fill text-dark"
+                                ></i>
+                                Get Info</a
+                              >
+                            </li>
+                          </ul>
+                          <!-- Music Rating -->
+                          <div class="fw-lighter">
+                            
+                            <small style="font-size: 12px;">4.44</small>
+                          </div>
+                          
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col text-white">
+                      <!-- List of Latest Release songs -->
+                    <ul class="list-group text-white">
+                        <!-- List item -->
+                        <li
+                          class="list-grp-item  text-white d-flex justify-content-between align-items-start bg-transparent px-0"
+                        >
+                        <!-- music logo -->
+                        <div id="l_r_songs_img">
+                          <a href="#latest_release_section" class="btn border border-0">
+                            <audio id="latestTestAudio2" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+                            </audio>
+                            <i id="latPlayAudio2" class="bi bi-play-fill"></i>
+                          </a>
+                        </div>
+                        <!-- music details -->
+                          <div
+                            class="ms-2 me-auto align-self-center justify-self-center"
+                          >
+                            <div class="fw-bold">Onism</div>
+                            <small class="fw-lighter" style="font-size: 12px;"
+                              >Aug 11, 2017</small
+                            >
+                          </div>
+                          <!-- options button -->
+                          <div class="">
+                            <a
+                              class=""
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="bi bi-three-dots text-light"></i>
+                            </a>
+                            <!-- Dropdown -->
+                            <ul class="dropdown-menu text-dark">
+                              <li>
+                                <!-- Play now Button -->
+                                <a class="dropdown-item" href="#"
+                                  ><i class="bi bi-play-fill text-dark"></i> Play
+                                  Now
+                                </a>
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Add to queue button -->
+                                <a class="dropdown-item " href="#"
+                                  ><i class="bi bi-plus text-dark"></i> Add To
+                                  Queue</a
+                                >
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Add to Favourite -->
+                                <a class="dropdown-item " href="#"
+                                  ><i class="bi bi-list-task text-dark"></i> Add
+                                  To Favourites</a
+                                >
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Get Info Button -->
+                                <a class="dropdown-item " href="#"
+                                  ><i
+                                    class="bi bi-info-circle-fill text-dark"
+                                  ></i>
+                                  Get Info</a
+                                >
+                              </li>
+                            </ul>
+                            <!-- Music Rating -->
+                            <div class="fw-lighter">
+                              
+                              <small style="font-size: 12px;">4.44</small>
+                            </div>
+                            
+                          </div>
+                        </li>
+                        
+                        <!-- List item -->
+                        <li
+                          class="list-grp-item  text-white d-flex justify-content-between align-items-start bg-transparent px-0"
+                        >
+                        <!-- music logo -->
+                        <div id="l_r_songs_img">
+                          <a href="#latest_release_section" class="btn border border-0">
+                            <audio id="latestTestAudio3" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+                            </audio>
+                            <i id="latPlayAudio3" class="bi bi-play-fill"></i>
+                          </a>
+                        </div>
+                        <!-- music details -->
+                          <div
+                            class="ms-2 me-auto align-self-center justify-self-center"
+                          >
+                            <div class="fw-bold">Onism</div>
+                            <small class="fw-lighter" style="font-size: 12px;"
+                              >Aug 11, 2017</small
+                            >
+                          </div>
+                          <!-- options button -->
+                          <div class="">
+                            <a
+                              class=""
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="bi bi-three-dots text-light"></i>
+                            </a>
+                            <!-- Dropdown -->
+                            <ul class="dropdown-menu text-dark">
+                              <li>
+                                <!-- Play now Button -->
+                                <a class="dropdown-item" href="#"
+                                  ><i class="bi bi-play-fill text-dark"></i> Play
+                                  Now
+                                </a>
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Add to queue button -->
+                                <a class="dropdown-item " href="#"
+                                  ><i class="bi bi-plus text-dark"></i> Add To
+                                  Queue</a
+                                >
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Add to Favourite -->
+                                <a class="dropdown-item " href="#"
+                                  ><i class="bi bi-list-task text-dark"></i> Add
+                                  To Favourites</a
+                                >
+                              </li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li>
+                                <!-- Get Info Button -->
+                                <a class="dropdown-item " href="#"
+                                  ><i
+                                    class="bi bi-info-circle-fill text-dark"
+                                  ></i>
+                                  Get Info</a
+                                >
+                              </li>
+                            </ul>
+                            <!-- Music Rating -->
+                            <div class="fw-lighter">
+                              
+                              <small style="font-size: 12px;">4.44</small>
+                            </div>
+                            
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                </section>
+
+                <!-- Popular Artists -->
+                <section id="popular-artist-section">
+                <div class="row mt-2">
+                  <!-- Section Heading -->
+                  <h5 class="mb-2">Popular Artists</h5>
+                  <div class="col-4 col-lg-2 text-center">
+                    <!-- Artist Image -->
+                    <div class="artist">
+                      <a class="fw-semibold text-decoration-none text-light" href="./single_playlist.html">
+                        <img
+                          class="card-img-top rounded-circle"
+                          src="./assets/static/artists/artist-img-4.jpg"
+                          alt="artist-profile"
+                        />
+                        <i class="bi bi-play-fill artist-btn"></i>
+                        Ed Sheraan
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <!-- Artist Image -->
+                      <div class="artist">
+                          <a class="fw-semibold text-decoration-none text-light" href="#">
+                            <img
+                              class="card-img-top rounded-circle"
+                              src="./assets/static/artists/artist-img-1.jpg"
+                              alt="artist-profile"
+                            />
+                            <i class="bi bi-play-fill artist-btn"></i>
+                            Akon
+                          </a>
+                        </div>
+                    
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <!-- Artist Image -->
+                      <div class="artist">
+                          <a class="fw-semibold text-decoration-none text-light" href="./single_playlist.html">
+                            <img
+                              class="card-img-top rounded-circle"
+                              src="./assets/static/artists/artist-img-2.jpg"
+                              alt="artist-profile"
+                            />
+                            <i class="bi bi-play-fill artist-btn"></i>
+                            Zayn
+                          </a>
+                        </div>
+                  </div>
+                  <div class="col-4 col-lg-2 fw-semibold text-center">
+                    <!-- Artist Image -->
+                      <div class="artist">
+                          <a class="fw-semibold text-decoration-none text-light" href="./single_playlist.html">
+                            <img
+                              class="card-img-top rounded-circle"
+                              src="./assets/static/artists/artist-img-3.jpg"
+                              alt="artist-profile"
+                            />
+                            <i class="bi bi-play-fill artist-btn"></i>
+                            Charlie Puth
+                          </a>
+                        </div>
+                   
+                  </div>
+                  <div class="col-4 col-lg-2 fw-semibold text-center">
+                    <!-- Artist Image -->
+                      <div class="artist">
+                          <a class="fw-semibold text-decoration-none text-light" href="./single_playlist.html">
+                            <img
+                              class="card-img-top rounded-circle"
+                              src="./assets/static/artists/artist-img-5.jpg"
+                              alt="artist-profile"
+                            />
+                            <i class="bi bi-play-fill artist-btn"></i>
+                            Imagine Dragon
+                          </a>
+                        </div>
+                    
+                  </div>
+                  <div class="col-4 col-lg-2 fw-semibold text-center">
+                    <!-- Artist Image -->
+                      <div class="artist">
+                          <a class="fw-semibold text-decoration-none text-light" href="./single_playlist.html">
+                            <img
+                              class="card-img-top rounded-circle"
+                              src="./assets/static/artists/artist-img-6.jpg"
+                              alt="artist-profile"
+                            />
+                            <i class="bi bi-play-fill artist-btn"></i>
+                            Bruno Mars
+                          </a>
+                        </div>
+                    
+                  </div>
+                </div>
+                </section>
+
+                <!-- Category -->
+                <section id="category-section">
+                <div class="row m-1 mt-2 ">
+                  <div class="col-lg-4  col-sm-12 mb-3 d-flex justify-content-center align-items-center ">
+                    <!-- Stations box -->
+                    
+                    <div class="box-1 my-3">
+                        <div class="box-2">
+                            <div class="box-3">
+                                <img src="./assets/static/stations-icon.png" alt="stations logo" />
+                                <span class="fw-semibold text-center">Stations</span>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 d-flex align-items-center">
+                    <div class="row">
+                      <!-- Theme : 1 -->
+                      <div class="col-4 col-lg-2 theme">
+                       
+                          <a>
+                            <img
+                              class="fluid-img rounded-circle"
+                              src="./assets/static/categories/category-1.jpg"
+                              alt="theme-1"
+                            />
+                            <p class="theme-name">Love</p>
+                          </a>
+                      </div>
+                      <!-- Theme : 2 -->
+                      <div class="col-4 col-lg-2 theme">
+                        <a>
+                          <img
+                            class="fluid-img rounded-circle"
+                            
+                            src="./assets/static/categories/category-2.jpg"
+                            alt="artist-profile"
+                          />
+                          <p class="theme-name">Retro</p>
+                        </a>
+                      </div>
+                      <!-- Theme : 3 -->
+                      <div class="col-4 col-lg-2 theme">
+                        <a>
+                          <img
+                            class="fluid-img rounded-circle"
+                            
+                            src="./assets/static/categories/category-3.jpg"
+                            alt="artist-profile"
+                          />
+                          <p class="theme-name">Chill</p>
+                        </a>
+                      </div>
+                      <!-- Theme : 4 -->
+                      <div class="col-4 col-lg-2 theme">
+                        <a>
+                          <img
+                            class="fluid-img rounded-circle"
+                            
+                            src="./assets/static/categories/category-4.jpg"
+                            alt="artist-profile"
+                          />
+                          <p id="workout" class="theme-name me-5">Workout</p>
+                        </a>
+                      </div>
+                      <!-- Theme : 5 -->
+                      <div class="col-4 col-lg-2 theme">
+                        <a>
+                          <img
+                            class="fluid-img rounded-circle"
+                            
+                            src="./assets/static/categories/category-5.jpg"
+                            alt="artist-profile"
+                          />
+                          <p class="theme-name">Rock</p>
+                        </a>
+                      </div>
+                      <!-- Theme : 6 -->
+                      <div class="col-4 col-lg-2 theme">
+                        <a>
+                          <img
+                            class="fluid-img rounded-circle"
+                            
+                            src="./assets/static/categories/category-6.jpg"
+                            alt="artist-profile"
+                          />
+                          <p class="theme-name">Pop</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+                <!-- Playlist Recommendation -->
+                <section id="recommendation-section">
+                <div
+                  class="row d-flex justify-content-center mt-5"
+                >
+                <!-- Recommended Playlist theme box : 1 -->
+                  <div class="col-6 col-lg-4 m-lg-0 mb-3 theme-grid">
+                    <div class="theme-box" >
+                      <!-- Theme Box Image -->
+                      <img
+                        src="./assets/static/theme/theme-1.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <!-- Overlay -->
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Party</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Recommended Playlist theme box : 2 -->
+                  <div class="col-6 col-lg-4 m-lg-0 mb-3 theme-grid">
+                     <!-- Theme Box Image -->
+                    <div class="theme-box" >
+                      <img
+                        src="./assets/static/theme/theme-2.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <!-- Overlay -->
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Electronic</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Recommended Playlist theme box : 3 -->
+                  <div class="col-6 col-lg-4 m-lg-0 mb-3 theme-grid">
+                    <div class="theme-box" >
+                      <!-- Theme Box Image -->
+                      <img
+                        src="./assets/static/theme/theme-3.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <!-- Overlay -->
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Road Trip</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+                </section>
+
+                <!-- Latest English -->
+                <section id="english-songs-section">
+                  <!-- Row for Songs -->
+                <div class="row mt-3 ">
+                  <!-- Section Heading -->
+                  <h5>Latest English</h5>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- card image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-1.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- card title -->
+                      <strong>Somebody</strong>
+                      <!-- card context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- card image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-2.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- card title -->
+                      <strong>Ily</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-3.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card title -->
+                      <strong>Onism</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-4.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Clean</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-5.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Calm Down</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/english-songs/english-song-6.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Ghostheidz</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                </section>
+                <!-- Latest Hindi -->
+                <section id="hindi-songs-section">
+                <div class="row mt-3 mb-5 ">
+                  <!-- Section Heading -->
+                  <h5>Latest Hindi</h5>
+                  <div class="col-4 col-lg-2">
+                    <div class="card bg-transparent">
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-1.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Baarish</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                      <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Song Image -->
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-2.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Galiyan</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card  -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-3.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>3 idiots</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-4.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card title -->
+                      <strong>Kaun tujhe</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-5.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card title -->
+                      <strong>Kabir Singh</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                  <div class="col-4 col-lg-2">
+                    <!-- Song Card -->
+                    <div class="card bg-transparent">
+                      <!-- Card Image -->
+                      <img
+                        src="./assets/static/hindi-songs/hindi-song-6.jpg"
+                        class="img-fluid"
+                        alt="English-song-1"
+                      />
+                      <!-- Card Title -->
+                      <strong>Tere Sang</strong>
+                      <!-- Card Context -->
+                      <small class="fw-lighter" style="font-size: 12px;"
+                        >Aug 11, 2017</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                </section>
+              </div>
+            </main>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-md-4" id="queue">
+          <!-- <aside> -->
+          <div
+              class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-3 mb-l g-5"
+            >
+            <!-- Button For Table of content -->
+              <button
+                class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none text-light bg-transparent"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tocContents"
+                aria-expanded="true"
+                aria-controls="tocContents"
+              >
+              <!-- Button Title : when Collapsed -->
+                Playlist
+                <i
+                  class="bi bi-caret-down-fill text-light d-md-none ms-2"
+                  aria-hidden="true"
+                ></i>
+                
+              </button>
+              <!-- <strong class="d-none d-md-block h6 my-2 text-light">Queue</strong> -->
+              <hr class="d-none d-md-block my-2" />
+              <div
+                class="bd-toc-collapse collapse show"
+                id="tocContents"
+              >
+              
+                <nav id="TableOfContents ">
+                  <!-- Small Navigation with some controls -->
+                  <nav class="navbar navbar-dark bg-custom p-0 m-0">
+                    <div class="container-fluid">
+                      <span class="navbar-brand mb-0"> Queue </span>
+                      <!-- Dropdown Button -->
+                      <div class="dropdown">
+                        <button
+                          class="btn queue-btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Queue
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">favourites</a>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Playlist</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <!-- Scrollable Content -->
+                  <div
+                    data-bs-spy="scroll"
+                    data-bs-target="#navbar-example3"
+                    data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2 h-auto"
+                    tabindex="0"
+                    
+                  >
+                  <!-- Songs in Queue -->
+                    <ol class="list-grp bg-custom" type="a">
+                      <li
+                        class="list-grp-item d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-1.jpg"
+                          alt="logo"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-6.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-5.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-2.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-3.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-4.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-5.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-6.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-1.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-2.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-3.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-4.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-6.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-1.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-2.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-3.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-4.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-5.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-6.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-1.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-2.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-3.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-4.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      <li
+                        class="list-grp-item  d-flex justify-content-between align-items-center bg-transparent text-white"
+                      >
+                        <img
+                          src="./assets/static/english-songs/english-song-5.jpg"
+                          alt="logo"
+                          width="70px"
+                          height="70px"
+                        />
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">Mirage</div>
+                          <small>Else</small>
+                        </div>
+                        <i class="bi bi-heart"></i>
+                      </li>
+                      
+                    </ol>
+                  </div>
+                </nav>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Music Player -->
+    <nav class="navbar navbar-dark navbar-expand-md fixed-bottom m-0 p-0">
+        <div class="container-fluid  d-flex justify-content-between bottom-navbar-bg-custom">
+            <!-- Left : Music logo | info | icons  -->
+          <div class=" collapse navbar-collapse ms-4 " id="navbarBottomSupportedContent">
+              <!-- Collapsable Context -->
+                  <div class="music-info text-light">
+                    <!-- Small music logo -->
+                      <a id="music-logo" class="navbar-brand" href="#">
+                          <img src="./assets/static/english-songs/english-song-5.jpg" alt="music-logo"
+                        /></a>
+                     <!-- Music text info -->
+                      <div class="ms-2 me-auto d-flex justify-content-between">
+                        <div class="music-text ">
+                          <!-- Music Title -->
+                        <p class="fw-bold mb-0">Mirage</p>
+                        <!-- Music Artist -->
+                        <small>Else</small>
+                        
+                      </div>
+                      <!-- Icons -->
+                      <div class="music-icons ms-1">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-slash-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <!-- Left Toggle button -->
+          <button
+            class="btn btn-sm navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarBottomSupportedContent"
+            aria-controls="navbarBottomSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="bottom-navbar-left-btn"
+          >
+            <span class="bi bi-ui-radios-grid"></span>
+          </button>
+
+            <!-- Center : Music player buttons -->    
+          <div class="player text-white flex-grow-1">
+            <div class="player-button">
+            <i class="bi bi-shuffle"></i>
+            <i class="bi bi-skip-start-fill"></i>
+            <!-- Sample audio -->
+            <audio id="testAudio" hidden src="https://api.twilio.com/cowbell.mp3" type="audio/mpeg">
+            </audio>
+            <i id="playAudio" class="bi bi-play-circle"></i>
+            <i class="bi bi-skip-end-fill"></i>
+            <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <!-- Audio Playing status -->
+            <div class="player-status">
+              <label for="music-status"><small>1:33</small></label>
+              <input type="range" id="music-status">
+              <label ><small>3:16</small></label>
+            </div>
+          </div>
+          <!-- Right Toggle button -->
+          <button
+          class="navbar-toggler btn btn-sm"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#musicControls"
+          aria-controls="musicControls"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bi bi-ui-radios"></span>
+          </button>
+          <!-- Right : Music player Controls  -->
+          <div class="collapse navbar-collapse  " id="musicControls">
+            
+            <!-- Buttons Container : Collapsable Content-->
+              <div class="d-flex justify-content-end w-100">
+                <button type="button" class="btn btn-sm text-light">
+                      <i class="bi bi-music-note-list position-relative"></i>
+                </button>
+                
+                <button type="button" class="btn btn-sm text-light">
+                    <i class="bi bi-pc-display position-relative"></i>
+                </button>
+                <button type="button" class="btn btn-sm text-light">
+                  <i class="bi bi-volume-up position-relative"></i>
+                </button>
+                <input type="range" id="volume-status">
+                <button type="button" class="btn btn-sm text-light">
+                <i class="bi bi-arrows-angle-expand position-relative"></i>
+                </button>    
+            </div>
+          </div>
+          
+        </div>
+      </nav>
+    <!-- To disable sandbox button -->
+  
+    
+  </body>
+  <!-- Bootstrap link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+  <!-- External Javascript link -->
+  <script src="./assets/script.js"></script>
+  
+</html>
